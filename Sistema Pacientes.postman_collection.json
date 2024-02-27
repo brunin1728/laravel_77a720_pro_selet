@@ -1,0 +1,459 @@
+{
+	"info": {
+		"_postman_id": "2e3f13cc-a81a-4cd2-a65e-6842db7e608c",
+		"name": "Sistema Pacientes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16068023"
+	},
+	"item": [
+		{
+			"name": "Cadastrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome_completo",
+							"value": "Bruno Carvalho",
+							"type": "text"
+						},
+						{
+							"key": "nome_mae",
+							"value": "Jania Gonçalves",
+							"type": "text"
+						},
+						{
+							"key": "data_nascimento",
+							"value": "28-09-1989",
+							"type": "text"
+						},
+						{
+							"key": "cpf",
+							"value": "99955874663",
+							"type": "text"
+						},
+						{
+							"key": "cns",
+							"value": "2654978856",
+							"type": "text"
+						},
+						{
+							"key": "cep",
+							"value": "25961-143",
+							"type": "text"
+						},
+						{
+							"key": "endereco",
+							"value": "Avenida Oliveira Botelho",
+							"type": "text"
+						},
+						{
+							"key": "numero",
+							"value": "885",
+							"type": "text"
+						},
+						{
+							"key": "complemento",
+							"value": "até 279 - lado ímpar",
+							"type": "text"
+						},
+						{
+							"key": "bairro",
+							"value": "Alto",
+							"type": "text"
+						},
+						{
+							"key": "cidade",
+							"value": "Teresópolis",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Rio de Janeiro",
+							"type": "text"
+						},
+						{
+							"key": "imagem",
+							"type": "file",
+							"src": "/C:/Users/bruno/OneDrive/Imagens/a-segunda-fase-da-copa-do-brasil-reune-40-clubes-85034.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/paciente/cadastrar",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"paciente",
+						"cadastrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Endereço por ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "cep",
+							"value": "25961-143",
+							"type": "text"
+						},
+						{
+							"key": "endereco",
+							"value": "Avenida Oliveira Botelho",
+							"type": "text"
+						},
+						{
+							"key": "numero",
+							"value": "574",
+							"type": "text"
+						},
+						{
+							"key": "complemento",
+							"value": "até 279 ",
+							"type": "text"
+						},
+						{
+							"key": "bairro",
+							"value": "PRata",
+							"type": "text"
+						},
+						{
+							"key": "cidade",
+							"value": "Teresópolis",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Rio de Janeiro",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/paciente/atualizar-endereco-id",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"paciente",
+						"atualizar-endereco-id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Endereço por ID do paciente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_paciente",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "cep",
+							"value": "25961-143",
+							"type": "text"
+						},
+						{
+							"key": "endereco",
+							"value": "Avenida Oliveira Botelho2222",
+							"type": "text"
+						},
+						{
+							"key": "numero",
+							"value": "7456",
+							"type": "text"
+						},
+						{
+							"key": "complemento",
+							"value": "até 279 - lado ímpar",
+							"type": "text"
+						},
+						{
+							"key": "bairro",
+							"value": "Varzea",
+							"type": "text"
+						},
+						{
+							"key": "cidade",
+							"value": "Teresópolis",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Rio de Janeiro",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/paciente/cadastrar-endereco-paciente",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"paciente",
+						"cadastrar-endereco-paciente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome_completo",
+							"value": "Bruno Carvalho2",
+							"type": "text"
+						},
+						{
+							"key": "nome_mae",
+							"value": "Jania Gonçalves2",
+							"type": "text"
+						},
+						{
+							"key": "data_nascimento",
+							"value": "28-09-19892",
+							"type": "text"
+						},
+						{
+							"key": "cpf",
+							"value": "639852144",
+							"type": "text"
+						},
+						{
+							"key": "cns",
+							"value": "26549788562",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/paciente/atualizar",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"paciente",
+						"atualizar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Importar CSV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "arquivo",
+							"type": "file",
+							"src": "/C:/Users/bruno/OneDrive/Documentos/teste-lista-fake-pacientes.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/paciente/cadastrar-lista-csv",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"paciente",
+						"cadastrar-lista-csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "nome_mae",
+							"value": "Jania Gonçalves",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "data_nascimento",
+							"value": "28-09-1989",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cpf",
+							"value": "13994252255",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cns",
+							"value": "2654978856",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cep",
+							"value": "25961-143",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "endereco",
+							"value": "Avenida Oliveira Botelho",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "numero",
+							"value": "131",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "complemento",
+							"value": "até 279 - lado ímpar",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "bairro",
+							"value": "Alto",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cidade",
+							"value": "Teresópolis",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "estado",
+							"value": "Rio de Janeiro",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/paciente/deletar",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"paciente",
+						"deletar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar CEP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/consultar-cep/25961-143",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"consultar-cep",
+						"25961-143"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
